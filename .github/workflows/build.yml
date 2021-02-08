@@ -53,8 +53,8 @@ jobs:
     - name: Install dependencies
       run: make init
 
-    - name: Force rebuild of pages and dataset
-      run: make clobber
+    - name: Force rebuild of pages
+      run: make clobber-docs
 
     - name: Build docs
       run: make render
